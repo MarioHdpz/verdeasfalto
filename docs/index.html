@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+<head>
+    
+    <!-- Your Basic Site Informations -->
+    <title>Affapress Documentation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Affapress documentation contains a complete tutorial that will make you easier to customize the look of the template as you want." />
+    <meta name="keywords" content="Documentation, Tutorial, Customize Template" />
+    <meta name="author" content="Affapress" />
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shCoreDefault.css">
+    
+    <!--[if lt IE 9]>
+    	<script src="js/html5.js"></script>
+        <script src="js/respond.min.js"></script>
+	<![endif]-->
+    
+    <!--[if lt IE 8]>
+    	<link rel="stylesheet" href="css/ie-older.css">
+    <![endif]-->
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+</head>
+<body data-spy="scroll" data-target="#navigation">
+    
+    <header id="top">
+    	<div class="container">
+        	<h1>Affapress Documentation</h1>
+            <p>This documentation contains a complete tutorial that will make you easier to customize the look of the template as you want.</p>  
+		</div>
+	</header>
+    
+    <div class="container">
+    	<div class="row">
+            <div class="col-sm-3" id="navigation">
+                
+                <ul class="nav nav-list">
+                    <li><a href="#installation"><i class="fa fa-chevron-right"></i> Installation</a></li>
+                    <li><a href="#html"><i class="fa fa-chevron-right"></i> HTML Structure</a></li>
+                    <li><a href="#css"><i class="fa fa-chevron-right"></i> CSS Structure</a></li>
+                    <li><a href="#scripts"><i class="fa fa-chevron-right"></i> Scripts</a></li>
+                    <li><a href="#php"><i class="fa fa-chevron-right"></i> PHP Integration</a></li>
+                    <li><a href="#image"><i class="fa fa-chevron-right"></i> Image Files</a></li>
+                    <li><a href="#credits"><i class="fa fa-chevron-right"></i> Credits</a></li>
+                </ul>
+                
+            </div>
+            <div class="col-sm-9" id="content">
+                
+                <h4>Thank you very much for purchasing from Affapress.</h4>
+                <p>If you have any issues or questions that this documentation does not cover, you can send us a message to <a href="mailto:support@affapress.com">support@affapress.com</a>.<br>You can get more updates documentation <a href="http://affapress.com/templates/flatland_responsive_flat_landing_page/docs/" target="_blank">here!</a></p>
+                
+                <br>
+                <h3 id="installation">Template Installation</h3>
+                <hr />
+                <p>You can view this template in any web browser from your desktop computer. Because the files are written in HTML, you do not need an internet connection in order to display or edit the template from your text editor.</p>
+                <p>All of the HTML files are given a descriptive name to make it easier to distingish what each file will display.</p>
+                <h4 style="margin-top:20px;">Upload to The Server</h4>
+                <ol>
+                    <li>It's important to understand that you must either have your own server space or use someone elses. The server space can be purchased at many different places around the internet. You need somewhere to put the files that you purchased so others can find them online.</li>
+                    <li>Select <strong>/html/</strong> folder, then choose layout which you want, and there will have several files with the extension labeled <strong>.html</strong>. This is where all your content will. In addition to <strong>.html</strong> you should see a file labeled <strong>.css</strong>. The <strong>.css</strong> files are going to be the files that will tell the <strong>.html</strong> how to to be styled. CSS is simply a way to take text, images, and other elements and change the look of them. It's very important to keep the <strong>.css</strong> file with the HTML or the HTML will not look how the design is meant to look. Along with the HTML and CSS files, you will also have five additional folders to upload: <strong>css, fonts, images, js and mailchimp</strong>.</li>
+                    <li>Start your FTP client (I persoanlly use Filezilla which is free) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.</li>
+                    <li>Locate the domain folder you wish to upload your template files to on your server. You are going to want to click and drag every file that you have labeled <strong>.html, .css, .js</strong> into your FTP client.</li>
+                    <li>Once the files are done uploading, you can try access your website via browser.</li>
+                </ol>
+                
+                <br>
+                <h4>Change The Template Color</h4>
+                <p>It's easy to change color of this template, you just need to change the a line code below:</p>
+                <ol>
+                	<li>Open the <strong>.html</strong> file (example <strong>index.html</strong>).</li>
+                    <li>Find this line of code in <strong>&lt;head&gt;</strong> section:
+                    <pre class="brush: js; ruler: true; first-line: 1;">
+                    &lt;!-- Custom Colors --&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/green/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/orange/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/pink/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/purple/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/yellow/color.css"&gt;--&gt;
+                    </pre></li>
+                    <li>Choose your favorite color with remove one of the comment tag like this:
+                    <pre class="brush: js; ruler: true; first-line: 1;">
+                    &lt;!-- Custom Colors --&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/green/color.css"&gt;--&gt;
+                    &lt;link rel="stylesheet" href="css/colors/orange/color.css"&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/pink/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/purple/color.css"&gt;--&gt;
+                    &lt;!--&lt;link rel="stylesheet" href="css/colors/yellow/color.css"&gt;--&gt;
+                    </pre></li>
+                    <li>Save and see the result!</li>
+                </ol>
+                
+                <br>
+                <h3 id="html">HTML Structure</h3>
+                <hr />
+                <p>This site template has a fixed layout with a variation of column layouts depending on the page. This template uses the <strong>1170 grid system (12 columns)</strong> which will help streamline any customization you wish to make. If you're unfamiliar with the 1170 grid system, be sure to read about it <a href="http://getbootstrap.com/examples/grid/" target="_blank">here</a>.</p>
+                <p>The main structure of this site is wrapped in a <strong>'container'</strong> div. Inside of that div you will find each major section of the site given an appropritae grid size all equalling 12 columns in length. For example, the <strong>'#main'</strong> element has a class of <strong>'col-sm-8'</strong> and the <strong>'#side'</strong> element has a class of <strong>'col-sm-4'</strong>. The total columns equals <strong>12 columns</strong>.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div id="main" class="col-sm-8"&gt;&lt;/div&gt;
+                        &lt;div id="side" class="col-sm-4"&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                </pre>
+                
+                <p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following in <strong>/css/style.css</strong> :</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                .navbar { text-align:center; }
+                </pre>
+                
+                <p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                #header .navbar { text-align:center; }
+                </pre>
+                <p>So, to ensure that your new styles are applied, make sure that they carry enough <strong>'weight'</strong> and that there isn't a style lower in the CSS file that is being applied after yours.</p>
+                
+                <br>
+                <h4>Site Logo</h4>
+                <p>You can change the main site logo with change this code:</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                &lt;div class="navbar-brand"&gt;&lt;img src="images/logo.png" alt="Logo" /&gt;&lt;/div&gt; &lt;!-- site logo --&gt;
+                </pre>
+                
+                <br>
+                <h4>Main Navigation</h4>
+                <p>You can change the main site navigation with change this code:</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[3,4]">
+                &lt;div class="collapse navbar-collapse" id="menu-collapse-1"&gt;
+                    &lt;ul class="nav navbar-nav navbar-right"&gt;
+                        &lt;li&gt;&lt;a href="#header" class="smooth-scroll"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                        ....
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                </pre>
+                
+                <br>
+                <h4>Header Content</h4>
+                <p>In this section you can change the template header content elements.</p>
+                
+                <p><strong>Header Layout 1:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[13,14,16,18,26,27]">
+                &lt;!-- .header-content --&gt;
+                &lt;div class="header-content"&gt;
+                    
+                    &lt;!-- .container --&gt;
+                    &lt;div class="container"&gt;
+                        
+                        &lt;!-- .row --&gt;
+                        &lt;div class="row"&gt;
+                            
+                            &lt;div class="col-sm-7"&gt;
+                                &lt;div class="header-text"&gt;
+                                    &lt;div class="header-heading"&gt;
+                                        &lt;p&gt;....&lt;/p&gt;
+                                        &lt;h1&gt;....&lt;/h1&gt;
+                                    &lt;/div&gt;
+                                    &lt;p&gt;....&lt;/p&gt;
+                                    &lt;div class="header-button"&gt;
+                                        ....
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;div class="col-sm-5 col-md-4 col-md-offset-1"&gt;
+                                &lt;div class="header-img"&gt;
+                                    &lt;div class="carousel-slider header-slider"&gt;
+                                        &lt;div&gt;&lt;img src="images/content/sliders/1.jpg" alt="Image 1" /&gt;&lt;/div&gt;
+                                        ....
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+                        &lt;!-- .row end --&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .container end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .header-content end --&gt;
+                </pre>
+                
+                <p><strong>Header Layout 2:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[9,10,12,14,20,21]">
+                &lt;!-- .header-content --&gt;
+                &lt;div class="header-content"&gt;
+                    
+                    &lt;!-- .container --&gt;
+                    &lt;div class="container"&gt;
+                        
+                        &lt;div class="header-text"&gt;
+                            &lt;div class="header-heading"&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                                &lt;h1&gt;....&lt;/h1&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                            &lt;div class="header-button"&gt;
+                                ....
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="header-img"&gt;
+                            &lt;div class="carousel-slider header-slider"&gt;
+                                &lt;div&gt;&lt;img src="images/content/sliders/1.jpg" alt="Image 1" /&gt;&lt;/div&gt;
+                                ....
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .container end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .header-content end --&gt;
+                </pre>
+                
+                <p><strong>Header Layout 3:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[13,14,16,18,26,27,30]">
+                &lt;!-- .header-content --&gt;
+                &lt;div class="header-content"&gt;
+                    
+                    &lt;!-- .container --&gt;
+                    &lt;div class="container"&gt;
+                        
+                        &lt;!-- .row --&gt;
+                        &lt;div class="row"&gt;
+                            
+                            &lt;div class="col-sm-7"&gt;
+                                &lt;div class="header-text"&gt;
+                                    &lt;div class="header-heading"&gt;
+                                        &lt;p&gt;....&lt;/p&gt;
+                                        &lt;h1&gt;....&lt;/h1&gt;
+                                    &lt;/div&gt;
+                                    &lt;p&gt;....&lt;/p&gt;
+                                    &lt;div class="header-button"&gt;
+                                        ....
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;div class="col-sm-5 col-md-4 col-md-offset-1 col-header-form"&gt;
+                                &lt;div class="header-form"&gt;
+                                    &lt;div class="header-form-heading"&gt;
+                                        &lt;h4&gt;....&lt;/h4&gt;
+                                        &lt;p&gt;....&lt;/p&gt;
+                                    &lt;/div&gt;
+                                    &lt;form method="post" action="#" class="affa-form-signup"&gt;
+                                        ....
+                                    &lt;/form&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            
+                        &lt;/div&gt;
+                        &lt;!-- .row end --&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .container end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .header-content end --&gt;
+                </pre>
+                
+                <p><strong>Header Layout 4:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[9,10,14,19]">
+                &lt;!-- .header-content --&gt;
+                &lt;div class="header-content"&gt;
+                    
+                    &lt;!-- .container --&gt;
+                    &lt;div class="container"&gt;
+                        
+                        &lt;div class="header-text"&gt;
+                            &lt;div class="header-heading"&gt;
+                                &lt;h1&gt;....&lt;/h1&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                            &lt;/div&gt;
+                            
+                            &lt;div class="header-button"&gt;
+                                ....
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;form method="post" action="#" class="affa-form-subscribe"&gt;
+                            ....
+                        &lt;/form&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .container end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .header-content end --&gt;
+                </pre>
+                
+                <br>
+                <h4>Feature Elements</h4>
+                <p>In this section you can change the features list offered by your app/product.</p>
+                
+                <p><strong>Feature Column Text:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[7,8,10,11,17]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row"&gt;
+                    
+                    &lt;div class="col-sm-10 col-md-6 col-sm-offset-1 col-md-offset-0 text-center-sm text-center-xs"&gt;
+                        &lt;div class="margin-bottom40"&gt;
+                            &lt;div class="post-heading-left text-center-sm text-center-xs"&gt;
+                                &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;h2&gt;....&lt;/h2&gt;
+                            &lt;/div&gt;
+                            &lt;p class="margin-bottom30"&gt;....&lt;/p&gt;
+                            &lt;a href="page.html" class="btn-custom"&gt;Learn More&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="col-sm-10 col-md-6 col-lg-5 col-sm-offset-1 col-md-offset-0 col-lg-offset-1"&gt;
+                        &lt;figure class="col-img40 margin-bottom40"&gt;
+                            ....
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .row end --&gt;
+                </pre>
+                
+                <p><strong>Feature Image Text:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[4,12]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row"&gt;
+                    
+                    &lt;div class="col-sm-4"&gt;
+                        &lt;div class="affa-feature-img"&gt;
+                            &lt;img src="images/content/icon/paint-brush.png" alt="Icon" /&gt;
+                            &lt;h4&gt;....&lt;/h4&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    ....
+                    
+                &lt;/div&gt;
+                &lt;!-- .row end --&gt;
+                </pre>
+                
+                <p><strong>Feature Icon Text:</strong></p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[6,14,20,26,34]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row row-custom"&gt;
+                    
+                    &lt;div class="col-left"&gt;
+                        
+                        &lt;div class="affa-feature-icon"&gt;
+                            &lt;i class="fa fa-laptop"&gt;&lt;/i&gt;
+                            &lt;div class="feature-text"&gt;
+                                &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        ....
+                        
+                    &lt;/div&gt;
+                    
+                    &lt;div class="col-center"&gt;
+                        &lt;figure class="margin-bottom40"&gt;
+                            ....
+                        &lt;/figure&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="col-right"&gt;
+                        
+                        &lt;div class="affa-feature-icon"&gt;
+                            &lt;i class="fa fa-paint-brush"&gt;&lt;/i&gt;
+                            &lt;div class="feature-text"&gt;
+                                &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        ....
+                        
+                    &lt;/div&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .row end --&gt;
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here!</a></strong></p>
+				
+                <br>
+                <h4>Counter Text Element</h4>
+                <p>In this section you can display you members, downloads and development hours of your app/product.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[4,12]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row"&gt;
+                    
+                    &lt;div class="col-sm-3"&gt;
+                    	&lt;div class="affa-counter"&gt;
+                        	&lt;img src="images/content/icon/stats.png" alt="Icon" /&gt;
+                            &lt;h4&gt;&lt;span&gt;198&lt;/span&gt;k&lt;/h4&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    ....
+                    
+                &lt;/div&gt;
+                &lt;!-- .row end --&gt;
+                </pre>
+				
+                <br>
+                <h4>Testimonial Element</h4>
+                <p>In this section you can change the testimonials list from your customers about your app/product.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[4,17]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row"&gt;
+                    
+                    &lt;div class="col-sm-6"&gt;
+                        &lt;div class="affa-testimonial"&gt;
+                            &lt;div class="testimonial-text"&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="testimonial-author"&gt;
+                                &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                                &lt;img src="images/content/avatar/1.jpg" alt="Avatar" /&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    ....
+                    
+                &lt;/div&gt;
+                &lt;!-- .row --&gt;
+                </pre>
+				
+                <br>
+                <h4>Screenshots Carousel Element</h4>
+                <p>In this section you can change the screenshots list of your app/product.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[3,12]">
+                &lt;div class="row carousel-slider gallery-slider"&gt;
+                    
+                    &lt;div class="col-sm-3"&gt;
+                        &lt;a href="...." class="fancybox" data-fancybox-group="images_gallery"&gt;
+                            &lt;figure class="img-hover"&gt;
+                                &lt;img src="...." alt="Image Screenshot 1" /&gt;
+                                &lt;div class="hover-masked"&gt;&lt;/div&gt;
+                            &lt;/figure&gt;
+                        &lt;/a&gt;
+                    &lt;/div&gt;
+                    
+                    ....
+                    
+                &lt;/div&gt;
+                </pre>
+				
+                <br>
+                <h4>Pricing Table Element</h4>
+                <p>In this section you can show the plans and pricing for the services provided by your app/product.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[7,26]">
+                &lt;!-- .tbl-pricing --&gt;
+                &lt;div class="tbl-pricing"&gt;
+                    
+                    &lt;!-- .row --&gt;
+                    &lt;div class="row"&gt;
+                        
+                        &lt;div class="col-sm-4 tbl-prc-col"&gt;
+                            &lt;div class="tbl-prc-wrap"&gt;
+                                &lt;div class="tbl-prc-heading"&gt;
+                                    &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;/div&gt;
+                                &lt;div class="tbl-prc-price"&gt;
+                                    &lt;h5&gt;$19&lt;i&gt;/ mo&lt;/i&gt;&lt;/h5&gt;
+                                    &lt;p&gt;....&lt;/p&gt;
+                                &lt;/div&gt;
+                                &lt;ul class="tbl-prc-list"&gt;
+                                    &lt;li&gt;....&lt;/li&gt;
+                                    ....
+                                &lt;/ul&gt;
+                                &lt;div class="tbl-prc-footer"&gt;
+                                    &lt;a href="#" class="btn-custom"&gt;Sign Up&lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        ....
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .row end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .tbl-pricing end --&gt;
+                </pre>
+				
+                <br>
+                <h4>Team Element</h4>
+                <p>In this section you can change the teams list of your company/group.</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[4,23]">
+                &lt;!-- .row --&gt;
+                &lt;div class="row"&gt;
+                    
+                    &lt;div class="col-sm-4"&gt;
+                        &lt;div class="affa-team-profile"&gt;
+                            &lt;figure class="team-profile-img"&gt;
+                                &lt;div class="team-profile-socials"&gt;
+                                    &lt;div class="team-profile-socials-wrap"&gt;
+                                        &lt;a href="#" title="Facebook"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+                                        ....
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;img src="images/content/avatar/1.jpg" alt="Avatar" /&gt;
+                            &lt;/figure&gt;
+                            &lt;div class="team-profile-name"&gt;
+                                &lt;h4&gt;....&lt;/h4&gt;
+                                &lt;p&gt;....&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    ....
+                    
+                &lt;/div&gt;
+                &lt;!-- .row end --&gt;
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here!</a></strong></p>
+				
+                <br>
+                <h4>Call-to-Action Element</h4>
+                <p>In this section you can show your app download buttons (Play Store & App Store).</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[8,9,13,14]">
+                &lt;!-- .bg-overlay --&gt;
+                &lt;div class="bg-overlay50 wrap-container120"&gt;
+                    
+                    &lt;!-- .container --&gt;
+                    &lt;div class="container"&gt;
+                        
+                        &lt;div class="post-heading-center"&gt;
+                            &lt;h2&gt;....&lt;/h2&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class="btn-section textcenter"&gt;
+                            &lt;a href="#" class="btn-custom btn-icon"&gt;&lt;i class="fa fa-apple"&gt;&lt;/i&gt; Apple Store&lt;/a&gt;
+                            &lt;a href="#" class="btn-custom btn-icon"&gt;&lt;i class="fa fa-android"&gt;&lt;/i&gt; Play Store&lt;/a&gt;
+                        &lt;/div&gt;
+                        
+                    &lt;/div&gt;
+                    &lt;!-- .container end --&gt;
+                    
+                &lt;/div&gt;
+                &lt;!-- .bg-overlay end --&gt;
+                </pre>
+				
+                <br>
+                <h4>Footer Elements</h4>
+                <p>In this section you can change your social media links and copyright text with your own name or company:</p>
+                <pre class="brush: js; ruler: true; first-line: 1; highlight:[6,7,13]">
+                &lt;!-- #footer --&gt;
+                &lt;footer id="footer"&gt;
+                    
+                    &lt;div class="footer-socials"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;a href="#" title="Twitter"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                            ....
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class="footer-copyright"&gt;
+                        &lt;div class="container"&gt;
+                            &lt;p&gt;....&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                &lt;/footer&gt;
+                &lt;!-- #footer end --&gt;
+                </pre>
+                <p><span class="label label-warning">Note:</span> You can see the complete list of font icons <strong><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here!</a></strong></p>
+				
+                <br>
+                <h4>FontAwesome Icon Packs</h4>
+                <p>You can also use built in icon packs in this template, all icons use CSS Font feature, so you can edit and give color to the icon easily. For referrences to easier you use all icons you can visit <strong><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">here!</a></strong></p>
+				
+                <br>
+                <h3 id="css">CSS Structure</h3>
+                <hr />
+                <p>I'm using one main CSS file <strong>(/css/style.css)</strong>, in this template which you are free to modify depending on the customization you require. There are also two additional style sheets that I do not recommend changing. Those style sheets reside in the <strong>/css/</strong> folder. Below are 3 additional CSS files:</p>
+                <ul style="list-style-type:square;">
+                    <li><strong>bootstrap.min.css</strong> - This is a main stylesheet that required for basic template styling like grid, form, input and web elements.</li>
+                    <li><strong>font-awesome.min.css</strong> - CSS stylesheets for font icon packs.</li>
+                    <li><strong>jquery.fancybox.css</strong> - This stylesheet used for styling the images gallery popup.</li>
+                    <li><strong>no-js.css</strong> - This stylesheet will be enabled if your browser don't support javascript.</li>
+                    <li><strong>ie-older.css</strong> - This stylesheet will be enabled if you use Internet Explorer 7 and below.</li>
+                    <li><strong>animate.min.css</strong> - This stylesheet use for styling the animation effects.</li>
+                    <li><strong>slick.css</strong> - This stylesheet use for styling all the web carousel elements.</li>
+                    <li><strong>slick-theme.css</strong> - Add additional styling to make Slick Slider look more beautiful.</li>
+                </ul>
+                <p>The main CSS file <strong>(/css/style.css)</strong> contains all of the specific stylings for the page. The file was divided into several sessions as below:</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                /* ========================= Site Styles ========================= */
+                
+                General styles for all web elements
+                
+                /* ========================= Header ========================= */
+                
+                CSS styles for the header section
+                
+                /* ========================= Elements ========================= */
+                
+                CSS styles for specific web elements
+                
+                /* ========================= Footer ========================= */
+                
+                CSS styles for the bottom section
+                
+                /* ========================= Media Queries ========================= */
+                
+                CSS styles for support all kinds of different screen sizes
+                </pre>
+                <p>If you would like to edit a specific section of the site, simply find the appropriate label in the <strong>.css</strong> file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+                
+                <br>
+                <h3 id="scripts">Scripts</h3>
+                <hr />
+                <p>This theme uses several scripts many of which are documented within the theme's code. If you're a developer, you will find this particularly useful.</p>
+                <ul class="nav nav-list nav-list-custom">
+                    <li><a href="http://jquery.com" target="_blank"><i class="fa fa-chevron-right"></i> jQuery v1.11.3</a></li>
+                    <li><a href="http://getbootstrap.com" target="_blank"><i class="fa fa-chevron-right"></i> Bootstrap JS</a></li>
+                    <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Easing</a></li>
+                    <li><a href="https://github.com/galambalazs/smoothscroll" target="_blank"><i class="fa fa-chevron-right"></i> SmoothScroll JS</a></li>
+                    <li><a href="https://github.com/ryanve/response.js" target="_blank"><i class="fa fa-chevron-right"></i> Response JS</a></li>
+                    <li><a href="https://github.com/scottjehl/Respond" target="_blank"><i class="fa fa-chevron-right"></i> Respond JS</a></li>
+                    <li><a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Placeholder</a></li>
+                    <li><a href="http://fitvidsjs.com" target="_blank"><i class="fa fa-chevron-right"></i> jQuery FitVids</a></li>
+                    <li><a href="https://github.com/imakewebthings/jquery-waypoints" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Waypoints</a></li>
+                    <li><a href="http://kenwheeler.github.io" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Slick</a></li>
+                    <li><a href="http://fancyapps.com/fancybox/" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Fancybox</a></li>
+                    <li><a href="http://pixelcog.github.io/parallax.js/" target="_blank"><i class="fa fa-chevron-right"></i> Parallax JS</a></li>
+                    <li><a href="https://github.com/bfintal/Counter-Up" target="_blank"><i class="fa fa-chevron-right"></i> jQuery CounterUp</a></li>
+                    <li><a href="https://github.com/farinspace/jquery.imgpreload" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Image Preload</a></li>
+                    <li><a href="http://isotope.metafizzy.co" target="_blank"><i class="fa fa-chevron-right"></i> jQuery Isotope</a></li>
+                </ul>
+                
+                <br>
+                <h3 id="php">PHP Integration</h3>
+                <hr />
+                <p>This template use the PHP engine for activate contact & signup proses. Through the contact form a message will direct send to your email address. Then for the signup form a message will send to guest/visitor and your email address. So you can edit your email address in <strong>process-contact.php</strong> and <strong>process-signup.php</strong> file.</p>
+                <pre class="brush: js; ruler: true; first-line: 1;">
+                $my_email = 'support@affapress.com'; // Change with your email address
+                </pre>
+                
+                <br><p>This template also use the PHP engine for subscribe form has supported with MailChimp integration. To activate this integration you must make some adjusment to several php files.</p>
+                <p><span class="label label-warning">Required:</span> You has already signed in <a href="http://mailchimp.com" target="_blank">mailchimp.com</a> and was familiar with the features provided by the MailChimp.</p>
+                <p>To adjust the MailChimp integration, follow this instruction:</p>
+                <ol>
+                	<li>Open the <strong>/mailchimp/config.inc.php</strong> file.</li>
+                    <li>Change <strong>$apikey</strong> variable with your MailChimp API Key, you can see in <strong><a href="http://admin.mailchimp.com/account/api" target="_blank">http://admin.mailchimp.com/account/api</a></strong></li>
+                    <li>Also write your MailChimp List ID in <strong>$listId</strong> variable. To get the List ID, login to your MailChimp account » select one of the list that has been created » go to <strong>Settings</strong> menu » <strong>List name &amp; defaults</strong>.</li>
+                </ol>
+                
+                <br>
+                <h3 id="image">Image Files</h3>
+                <hr />
+                <p>The following Photoshop files are included with download package file, all the files place in <strong>/psd/</strong> folder.</p>
+                <ul style="list-style-type:square;">
+                	<li>index.psd</li>
+				</ul>
+                <p>In addition to several assets you can download it for free through the links below:</p>
+                <ul class="nav nav-list nav-list-custom">
+                    <li><a href="https://dribbble.com/shots/1201666-Free-Flat-Icons/" target="_blank"><i class="fa fa-chevron-right"></i> Free Flat Icons</a></li>
+					<li><a href="http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd" target="_blank"><i class="fa fa-chevron-right"></i> Flat Responsive Showcase Psd</a></li>
+                    <li><a href="https://www.behance.net/gallery/13493563/FREE-Flat-Apple-Devices-Mockup-iPhone-6-update" target="_blank"><i class="fa fa-chevron-right"></i> FREE Flat Apple Devices Mockup</a></li>
+                    <li><a href="http://www.graphicsfuel.com/2013/03/apple-products-minimal-wireframe-kit-psd/" target="_blank"><i class="fa fa-chevron-right"></i> Apple Products Minimal Wireframe Kit (PSD)</a></li>
+                    <li><a href="http://www.pixelstalk.net/landscape-color-drawing-hd-wallpaper/" target="_blank"><i class="fa fa-chevron-right"></i> Landscape color drawing HD Wallpaper</a></li>
+                </ul>
+                
+                <br>
+                <h3 id="credits">Credits</h3>
+                <hr />
+                
+                <ul class="nav nav-list nav-list-custom">
+                	<li><a href="http://getbootstrap.com" target="_blank"><i class="fa fa-chevron-right"></i> Twitter Bootstrap</a></li>
+                    <li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fa fa-chevron-right"></i> FontAwesome</a></li>
+                    <li><a href="https://www.google.com/fonts" target="_blank"><i class="fa fa-chevron-right"></i> Google WebFonts</a></li>
+                </ul>
+                
+                <br><br>
+                <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. Please contact me via email or social media. I'll do my best to assist!</p>
+                
+            </div>
+        </div>
+	</div>
+    
+    <footer id="footer">
+    	<div class="container">Copyright © 2016 by Affapress. All rights reserved.</div>
+    </footer>
+    
+    <!--[if lt IE 8]>
+    	<div class="browser-notice">
+            <div class="container">
+            	<div class="text">
+                    <h1>Internet Explorer Out To Date</h1>
+                    <p>Please update your Internet Explorer browser with a newer version (Internet Explorer 8 above) now!</p>
+                    <span>You can download it <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="blank">here....</a></span>
+                </div>
+            </div>
+        </div>
+	<![endif]-->
+    
+    <!-- JavaScripts -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+</html>

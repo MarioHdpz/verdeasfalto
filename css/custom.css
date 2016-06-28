@@ -1,0 +1,13 @@
+#header .header-content .header-text{
+  padding: 0 20px;
+
+}
+#header .header-content{
+  padding-top: 20px;
+}
+#header .navbar{
+  padding-top: 10px;
+}
+#header .navbar-sep-border{
+  margin-top: 5px;
+}
